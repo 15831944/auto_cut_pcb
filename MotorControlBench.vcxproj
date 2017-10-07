@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv\build\x86\vc10\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>D:\opencv\build\x86\vc10\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <LibraryPath>D:\opencv\build\x86\vc10\staticlib;D:\matlab\extern\lib\win32\microsoft\msvc60;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;D:\opencv\build\x86\vc10\lib</LibraryPath>
+    <IncludePath>D:\opencv\build\include\opencv;D:\opencv\build\include\opencv2;D:\opencv\build\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\MotorControlBench.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <CallingConvention>StdCall</CallingConvention>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\MotorControlBench.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\MotorControlBench.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\MotorControlBench.exe</OutputFile>
+      <AdditionalDependencies>GT400.lib;PEGRP32C.lib;opencv_calib3d244d.lib;opencv_contrib244d.lib;opencv_core244d.lib;opencv_features2d244d.lib;opencv_flann244d.lib;opencv_gpu244d.lib;opencv_highgui244d.lib;opencv_imgproc244d.lib;opencv_legacy244d.lib;opencv_ml244d.lib;opencv_nonfree244d.lib;opencv_objdetect244d.lib;opencv_photo244d.lib;opencv_stitching244d.lib;opencv_ts244d.lib;opencv_video244d.lib;opencv_videostab244d.lib;opencv_calib3d244.lib;opencv_contrib244.lib;opencv_core244.lib;opencv_features2d244.lib;opencv_flann244.lib;opencv_gpu244.lib;opencv_highgui244.lib;opencv_imgproc244.lib;opencv_legacy244.lib;opencv_ml244.lib;opencv_nonfree244.lib;opencv_objdetect244.lib;opencv_photo244.lib;opencv_stitching244.lib;opencv_ts244.lib;opencv_video244.lib;opencv_videostab244.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\MotorControlBench.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\MotorControlBench.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\MotorControlBench.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\MotorControlBench.exe</OutputFile>
+      <AdditionalDependencies>IlmImf.lib;IlmImfd.lib;libjasper.lib;libjasperd.lib;libjpeg.lib;libjpegd.lib;libpng.lib;libpngd.lib;libtiff.lib;libtiffd.lib;opencv_calib3d244.lib;opencv_calib3d244d.lib;opencv_contrib244.lib;opencv_contrib244d.lib;opencv_core244.lib;opencv_core244d.lib;opencv_features2d244.lib;opencv_features2d244d.lib;opencv_flann244.lib;opencv_flann244d.lib;opencv_gpu244.lib;opencv_gpu244d.lib;opencv_haartraining_engine.lib;opencv_haartraining_engined.lib;opencv_highgui244.lib;opencv_highgui244d.lib;opencv_imgproc244.lib;opencv_imgproc244d.lib;opencv_legacy244.lib;opencv_legacy244d.lib;opencv_ml244.lib;opencv_ml244d.lib;opencv_nonfree244.lib;opencv_nonfree244d.lib;opencv_objdetect244.lib;opencv_objdetect244d.lib;opencv_photo244.lib;opencv_photo244d.lib;opencv_stitching244.lib;opencv_stitching244d.lib;opencv_ts244.lib;opencv_ts244d.lib;opencv_video244.lib;opencv_video244d.lib;opencv_videostab244.lib;opencv_videostab244d.lib;zlib.lib;zlibd.lib;Vfw32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\opencv\build\x86\vc10\staticlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <PreventDllBinding>true</PreventDllBinding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ACMotorCtrlWnd.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="BufPtr.cpp" />
+    <ClCompile Include="CardInitDlg.cpp" />
+    <ClCompile Include="ChartStatic.cpp" />
+    <ClCompile Include="CIniFile.cpp" />
+    <ClCompile Include="CNC_c.cpp" />
+    <ClCompile Include="CNCData.cpp" />
+    <ClCompile Include="DCMotrCtrlWnd.cpp" />
+    <ClCompile Include="DebugDlg.cpp" />
+    <ClCompile Include="digitaldisp.cpp" />
+    <ClCompile Include="DY_MATH.CPP" />
+    <ClCompile Include="FixedSplitterWnd.cpp" />
+    <ClCompile Include="FunctionBar.cpp" />
+    <ClCompile Include="GCodeCtrlWnd.cpp" />
+    <ClCompile Include="GCodeDrawView.cpp" />
+    <ClCompile Include="GCodeFrame.cpp" />
+    <ClCompile Include="GTCARD.cpp" />
+    <ClCompile Include="InterpExpCtrlWnd.cpp" />
+    <ClCompile Include="InterpExpDrawView.cpp" />
+    <ClCompile Include="InterpExpFrame.cpp" />
+    <ClCompile Include="Interpolation.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ModeSelTabCtrl.cpp" />
+    <ClCompile Include="MotorControlBench.cpp" />
+    <ClCompile Include="MotorControlBenchDoc.cpp" />
+    <ClCompile Include="MotorControlBenchView.cpp" />
+    <ClCompile Include="PageBasePara.cpp" />
+    <ClCompile Include="PageCcdRange.cpp" />
+    <ClCompile Include="PageDown.cpp" />
+    <ClCompile Include="PageEdit.cpp" />
+    <ClCompile Include="PageExec.cpp" />
+    <ClCompile Include="PageFeedSetting.cpp" />
+    <ClCompile Include="PageGearMode.cpp" />
+    <ClCompile Include="PageJogOperate.cpp" />
+    <ClCompile Include="PagePlaneSel.cpp" />
+    <ClCompile Include="PageSysPara.cpp" />
+    <ClCompile Include="PageMark.cpp" />
+    <ClCompile Include="PageSystem.cpp" />
+    <ClCompile Include="PageUp.cpp" />
+    <ClCompile Include="PageTech.cpp" />
+    <ClCompile Include="PageZoomOperate.cpp" />
+    <ClCompile Include="ParaSetDlg.cpp" />
+    <ClCompile Include="PasWordDlg.cpp" />
+    <ClCompile Include="Position.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TabSheet.cpp" />
+    <ClCompile Include="TechSelTabCtrl.cpp" />
+    <ClCompile Include="CcdSelTabCtrl.cpp" />
+    <ClCompile Include="ViewSelTabCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MotorControlBench.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ACMotorCtrlWnd.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="BufPtr.h" />
+    <ClInclude Include="CardInitDlg.h" />
+    <ClInclude Include="ChartStatic.h" />
+    <ClInclude Include="CIniFile.h" />
+    <ClInclude Include="Cnc_api.h" />
+    <ClInclude Include="CNC_c.h" />
+    <ClInclude Include="CNCData.h" />
+    <ClInclude Include="DCMotrCtrlWnd.h" />
+    <ClInclude Include="DebugDlg.h" />
+    <ClInclude Include="digitaldisp.h" />
+    <ClInclude Include="DY_MATH.H" />
+    <ClInclude Include="FixedSplitterWnd.h" />
+    <ClInclude Include="FunctionBar.h" />
+    <ClInclude Include="GCodeCtrlWnd.h" />
+    <ClInclude Include="GCodeDrawView.h" />
+    <ClInclude Include="GCodeFrame.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="..\..\GMD_IMPROVE\GMD_Demo_SOR_1.0\GT400.H" />
+    <ClInclude Include="GTCARD.h" />
+    <ClInclude Include="GTCNCLib.h" />
+    <ClInclude Include="InterpExpCtrlWnd.h" />
+    <ClInclude Include="InterpExpDrawView.h" />
+    <ClInclude Include="InterpExpFrame.h" />
+    <ClInclude Include="Interpolation.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ModeSelTabCtrl.h" />
+    <ClInclude Include="MotorControlBench.h" />
+    <ClInclude Include="MotorControlBenchDoc.h" />
+    <ClInclude Include="MotorControlBenchView.h" />
+    <ClInclude Include="MyDataType.h" />
+    <ClInclude Include="PageBasePara.h" />
+    <ClInclude Include="PageCcdRange.h" />
+    <ClInclude Include="PageDown.h" />
+    <ClInclude Include="PageEdit.h" />
+    <ClInclude Include="PageExec.h" />
+    <ClInclude Include="PageFeedSetting.h" />
+    <ClInclude Include="PageGearMode.h" />
+    <ClInclude Include="PageJogOperate.h" />
+    <ClInclude Include="PagePlaneSel.h" />
+    <ClInclude Include="PageSMode.h" />
+    <ClInclude Include="PageSysPara.h" />
+    <ClInclude Include="PageMark.h" />
+    <ClInclude Include="PageSystem.h" />
+    <ClInclude Include="PageUp.h" />
+    <ClInclude Include="PageTech.h" />
+    <ClInclude Include="PageZoomOperate.h" />
+    <ClInclude Include="ParaSetDlg.h" />
+    <ClInclude Include="PasWordDlg.h" />
+    <ClInclude Include="Pegrpapi.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TabSheet.h" />
+    <ClInclude Include="TechSelTabCtrl.h" />
+    <ClInclude Include="TModeSel.h" />
+    <ClInclude Include="CcdSelTabCtrl.h" />
+    <ClInclude Include="ViewSelTabCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\3.bmp" />
+    <CustomBuild Include="res\AddRec.ICO" />
+    <CustomBuild Include="res\bitmap2.bmp" />
+    <CustomBuild Include="res\bitmap4.bmp" />
+    <CustomBuild Include="res\CONTROL.ICO" />
+    <CustomBuild Include="res\Degree.ico" />
+    <CustomBuild Include="res\gcode.ico" />
+    <CustomBuild Include="res\GO.ICO" />
+    <CustomBuild Include="res\GOOGOL.ICO" />
+    <CustomBuild Include="res\Green2.bmp" />
+    <CustomBuild Include="res\Hand_X_Right.ico" />
+    <CustomBuild Include="res\Headband(500x354).bmp" />
+    <CustomBuild Include="res\ICON_OK.ICO" />
+    <CustomBuild Include="res\interface 01.bmp" />
+    <CustomBuild Include="res\interface 02.bmp" />
+    <CustomBuild Include="res\LedOff.ico" />
+    <CustomBuild Include="res\LedOn.ico" />
+    <CustomBuild Include="res\MISC01.ICO" />
+    <CustomBuild Include="res\MotorControlBench.ico" />
+    <CustomBuild Include="res\MotorControlBench.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\MotorControlBenchDoc.ico" />
+    <CustomBuild Include="res\OOFL.ICO" />
+    <CustomBuild Include="res\Red2.bmp" />
+    <CustomBuild Include="res\TOOLS.ICO" />
+    <CustomBuild Include="res\VideoSourceSet.ICO" />
+    <CustomBuild Include="res\G.AVI">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="GT400.LIB" />
+    <Library Include="PEGRP32C.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MotorControlBench.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

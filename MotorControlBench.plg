@@ -1,0 +1,230 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MotorControlBench - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/MotorControlBench.res" /d "_DEBUG" /d "_AFXDLL" "E:\development\MCB_SOR_1.0\MotorControlBench.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8D.tmp" with contents
+[
+/nologo /Gz /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MotorControlBench.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\development\MCB_SOR_1.0\ACMotorCtrlWnd.cpp"
+"E:\development\MCB_SOR_1.0\BtnST.cpp"
+"E:\development\MCB_SOR_1.0\BufPtr.cpp"
+"E:\development\MCB_SOR_1.0\CardInitDlg.cpp"
+"E:\development\MCB_SOR_1.0\ChartStatic.cpp"
+"E:\development\MCB_SOR_1.0\CIniFile.cpp"
+"E:\development\MCB_SOR_1.0\CNC_c.cpp"
+"E:\development\MCB_SOR_1.0\CNCData.cpp"
+"E:\development\MCB_SOR_1.0\DCMotrCtrlWnd.cpp"
+"E:\development\MCB_SOR_1.0\DebugDlg.cpp"
+"E:\development\MCB_SOR_1.0\digitaldisp.cpp"
+"E:\development\MCB_SOR_1.0\DY_MATH.CPP"
+"E:\development\MCB_SOR_1.0\FixedSplitterWnd.cpp"
+"E:\development\MCB_SOR_1.0\FunctionBar.cpp"
+"E:\development\MCB_SOR_1.0\GCodeCtrlWnd.cpp"
+"E:\development\MCB_SOR_1.0\GCodeDrawView.cpp"
+"E:\development\MCB_SOR_1.0\GCodeFrame.cpp"
+"E:\development\MCB_SOR_1.0\GTCARD.cpp"
+"E:\development\MCB_SOR_1.0\InterpExpCtrlWnd.cpp"
+"E:\development\MCB_SOR_1.0\InterpExpDrawView.cpp"
+"E:\development\MCB_SOR_1.0\InterpExpFrame.cpp"
+"E:\development\MCB_SOR_1.0\Interpolation.cpp"
+"E:\development\MCB_SOR_1.0\MainFrm.cpp"
+"E:\development\MCB_SOR_1.0\ModeSelTabCtrl.cpp"
+"E:\development\MCB_SOR_1.0\MotorControlBench.cpp"
+"E:\development\MCB_SOR_1.0\MotorControlBenchDoc.cpp"
+"E:\development\MCB_SOR_1.0\MotorControlBenchView.cpp"
+"E:\development\MCB_SOR_1.0\PageBasePara.cpp"
+"E:\development\MCB_SOR_1.0\PageFeedSetting.cpp"
+"E:\development\MCB_SOR_1.0\PageGearMode.cpp"
+"E:\development\MCB_SOR_1.0\PageJogOperate.cpp"
+"E:\development\MCB_SOR_1.0\PagePlaneSel.cpp"
+"E:\development\MCB_SOR_1.0\PageSMode.cpp"
+"E:\development\MCB_SOR_1.0\PageSysPara.cpp"
+"E:\development\MCB_SOR_1.0\PageTMode.cpp"
+"E:\development\MCB_SOR_1.0\PageVelMode.cpp"
+"E:\development\MCB_SOR_1.0\PageZoomOperate.cpp"
+"E:\development\MCB_SOR_1.0\ParaSetDlg.cpp"
+"E:\development\MCB_SOR_1.0\PasWordDlg.cpp"
+"E:\development\MCB_SOR_1.0\Position.cpp"
+"E:\development\MCB_SOR_1.0\TabSheet.cpp"
+"E:\development\MCB_SOR_1.0\ViewSelTabCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8E.tmp" with contents
+[
+/nologo /Gz /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MotorControlBench.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\development\MCB_SOR_1.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8F.tmp" with contents
+[
+GT400.lib PEGRP32C.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MotorControlBench.pdb" /debug /machine:I386 /out:"Debug/MotorControlBench.exe" /pdbtype:sept 
+.\Debug\ACMotorCtrlWnd.obj
+.\Debug\BtnST.obj
+.\Debug\BufPtr.obj
+.\Debug\CardInitDlg.obj
+.\Debug\ChartStatic.obj
+.\Debug\CIniFile.obj
+.\Debug\CNC_c.obj
+.\Debug\CNCData.obj
+.\Debug\DCMotrCtrlWnd.obj
+.\Debug\DebugDlg.obj
+.\Debug\digitaldisp.obj
+.\Debug\DY_MATH.OBJ
+.\Debug\FixedSplitterWnd.obj
+.\Debug\FunctionBar.obj
+.\Debug\GCodeCtrlWnd.obj
+.\Debug\GCodeDrawView.obj
+.\Debug\GCodeFrame.obj
+.\Debug\GTCARD.obj
+.\Debug\InterpExpCtrlWnd.obj
+.\Debug\InterpExpDrawView.obj
+.\Debug\InterpExpFrame.obj
+.\Debug\Interpolation.obj
+.\Debug\MainFrm.obj
+.\Debug\ModeSelTabCtrl.obj
+.\Debug\MotorControlBench.obj
+.\Debug\MotorControlBenchDoc.obj
+.\Debug\MotorControlBenchView.obj
+.\Debug\PageBasePara.obj
+.\Debug\PageFeedSetting.obj
+.\Debug\PageGearMode.obj
+.\Debug\PageJogOperate.obj
+.\Debug\PagePlaneSel.obj
+.\Debug\PageSMode.obj
+.\Debug\PageSysPara.obj
+.\Debug\PageTMode.obj
+.\Debug\PageVelMode.obj
+.\Debug\PageZoomOperate.obj
+.\Debug\ParaSetDlg.obj
+.\Debug\PasWordDlg.obj
+.\Debug\Position.obj
+.\Debug\StdAfx.obj
+.\Debug\TabSheet.obj
+.\Debug\ViewSelTabCtrl.obj
+.\Debug\MotorControlBench.res
+.\GT400.LIB
+.\PEGRP32C.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ACMotorCtrlWnd.cpp
+BtnST.cpp
+BufPtr.cpp
+CardInitDlg.cpp
+ChartStatic.cpp
+CIniFile.cpp
+CNC_c.cpp
+E:\development\MCB_SOR_1.0\CNC_c.cpp(255) : warning C4101: 'xCur' : unreferenced local variable
+E:\development\MCB_SOR_1.0\CNC_c.cpp(255) : warning C4101: 'yCur' : unreferenced local variable
+E:\development\MCB_SOR_1.0\CNC_c.cpp(255) : warning C4101: 'zCur' : unreferenced local variable
+CNCData.cpp
+DCMotrCtrlWnd.cpp
+DebugDlg.cpp
+digitaldisp.cpp
+DY_MATH.CPP
+FixedSplitterWnd.cpp
+FunctionBar.cpp
+GCodeCtrlWnd.cpp
+E:\development\MCB_SOR_1.0\GCodeCtrlWnd.cpp(658) : warning C4800: 'short' : forcing value to bool 'true' or 'false' (performance warning)
+E:\development\MCB_SOR_1.0\GCodeCtrlWnd.cpp(1356) : warning C4800: 'short' : forcing value to bool 'true' or 'false' (performance warning)
+GCodeDrawView.cpp
+GCodeFrame.cpp
+E:\development\MCB_SOR_1.0\GCodeFrame.cpp(43) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+GTCARD.cpp
+E:\development\MCB_SOR_1.0\GTCARD.cpp(845) : warning C4800: 'short' : forcing value to bool 'true' or 'false' (performance warning)
+InterpExpCtrlWnd.cpp
+InterpExpDrawView.cpp
+Generating Code...
+Compiling...
+InterpExpFrame.cpp
+Interpolation.cpp
+MainFrm.cpp
+ModeSelTabCtrl.cpp
+MotorControlBench.cpp
+MotorControlBenchDoc.cpp
+MotorControlBenchView.cpp
+PageBasePara.cpp
+PageFeedSetting.cpp
+PageGearMode.cpp
+PageJogOperate.cpp
+PagePlaneSel.cpp
+PageSMode.cpp
+PageSysPara.cpp
+PageTMode.cpp
+PageVelMode.cpp
+PageZoomOperate.cpp
+ParaSetDlg.cpp
+PasWordDlg.cpp
+Position.cpp
+Generating Code...
+Compiling...
+TabSheet.cpp
+ViewSelTabCtrl.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP91.tmp" with contents
+[
+/nologo /o"Debug/MotorControlBench.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\ACMotorCtrlWnd.sbr
+.\Debug\BtnST.sbr
+.\Debug\BufPtr.sbr
+.\Debug\CardInitDlg.sbr
+.\Debug\ChartStatic.sbr
+.\Debug\CIniFile.sbr
+.\Debug\CNC_c.sbr
+.\Debug\CNCData.sbr
+.\Debug\DCMotrCtrlWnd.sbr
+.\Debug\DebugDlg.sbr
+.\Debug\digitaldisp.sbr
+.\Debug\DY_MATH.SBR
+.\Debug\FixedSplitterWnd.sbr
+.\Debug\FunctionBar.sbr
+.\Debug\GCodeCtrlWnd.sbr
+.\Debug\GCodeDrawView.sbr
+.\Debug\GCodeFrame.sbr
+.\Debug\GTCARD.sbr
+.\Debug\InterpExpCtrlWnd.sbr
+.\Debug\InterpExpDrawView.sbr
+.\Debug\InterpExpFrame.sbr
+.\Debug\Interpolation.sbr
+.\Debug\MainFrm.sbr
+.\Debug\ModeSelTabCtrl.sbr
+.\Debug\MotorControlBench.sbr
+.\Debug\MotorControlBenchDoc.sbr
+.\Debug\MotorControlBenchView.sbr
+.\Debug\PageBasePara.sbr
+.\Debug\PageFeedSetting.sbr
+.\Debug\PageGearMode.sbr
+.\Debug\PageJogOperate.sbr
+.\Debug\PagePlaneSel.sbr
+.\Debug\PageSMode.sbr
+.\Debug\PageSysPara.sbr
+.\Debug\PageTMode.sbr
+.\Debug\PageVelMode.sbr
+.\Debug\PageZoomOperate.sbr
+.\Debug\ParaSetDlg.sbr
+.\Debug\PasWordDlg.sbr
+.\Debug\Position.sbr
+.\Debug\TabSheet.sbr
+.\Debug\ViewSelTabCtrl.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP91.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MotorControlBench.exe - 0 error(s), 7 warning(s)
+</pre>
+</body>
+</html>
